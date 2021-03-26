@@ -21,7 +21,7 @@ async function doFetch() {
             <p>${description}</p>
             About the product(s): <i>${product}</i><br>
             <a class="btn btn-primary" href="/devlogs/${file}">View this article</a>
-            <br>
+            <br><br>
         </li>`;
 
         articles.innerHTML += construct;

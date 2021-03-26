@@ -5,5 +5,12 @@
         "author": "JanCraft",
         "product": "Website",
         "file": "new_website.html"
+    },
+    {
+        "title": "Free web services",
+        "description": "Do you want free web services? This article shows you how to host free web services in the cloud.",
+        "author": "JanCraft",
+        "product": "None",
+        "file": "free_web_services.html"
     }
 ]

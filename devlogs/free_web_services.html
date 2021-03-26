@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#506aa1">
+    <meta name="description" content="jDev - Do you want free web services? This article shows you how to host free web services in the cloud.">
+    <meta name="author" content="JanCraft">
+    
+    <meta property="og:title" content="Free web services">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jdev.com.es/devlogs/free_web_services.html">
+    <meta property="og:site_name" content="jDev">
+    <meta property="og:image" content="https://jdev.com.es/img/favicon.png">
+    <meta property="og:image:alt" content="jDev logo">
+    <meta property="og:description" content="Do you want free web services? This article shows you how to host free web services in the cloud.">
+
+    <title>jDev - Free web services</title>
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="text-light">
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/#home">
+            <img src="/img/favicon.png" alt="" width=48 height=48>
+            jDev
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="nav-home" class="nav-link" href="/#home">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <article role="main" class="container">
+        <h1><u>Free web services</u></h1>
+        <h2>Do you want free web services? This article shows you how to host free web services in the cloud.</h2>
+        <br>
+
+        <p>
+            <u>Front end</u><br>
+            For hosting your static files you can use <a target=jdev_ghpages href="https://pages.github.com/">GitHub Pages</a>, the only thing is that your static content will be publicly visible.
+            <br>Another option is <a target=jdev_firebasehost href="https://firebase.google.com/products/hosting/">Firebase Hosting</a>, which has a limit but keeps your source code private.
+            <br>
+            <br>
+            
+            <u>Back end (Serverfull)</u><br>
+            There are 2 options for this one as well.<br>
+            1) <a target=jdev_cloudnode href="https://cloudno.de/">Cloudnode</a> - Public source code and private environment variables (for secrets and API keys)<br>
+            2) <a target=jdev_heroku href="https://heroku.com/">Heroku</a> - Private source code but has a 15-20s delay on start and maximum monthly hours<br>
+            <br>
+            There is also jDev's host, Denohost, but it relies on Heroku and has really slow start times (we're trying to improve that).
+            
+            <br>
+            <br>
+            <u>Back end (Serverless)</u><br>
+            I don't really use serverless but here's two of them anyway:<br>
+            1) <a target=jdev_cloudflareworkers href="https://workers.cloudflare.com/">Cloudflare Workers</a><br>
+            2) <a target=jdev_back4app href="https://www.back4app.com/">Back4App</a>
+            <br>
+            <br>
+            <u>Conclusion</u><br>
+            There's really lots of options, you can choose what you want to use for any project.<br>
+            You can like anything, I have tried all of the services I have showed you (except Back4App) and have concluded you can use them all without any problems.
+            <br>
+            <br>
+            <u>My preference</u><br>
+            I use the GHPH (GitHub Pages + Heroku) stack but like a lot more the GHPC (GitHub Pages + Cloudnode) stack.
+            I'm also going to try the GHPCW (GitHub Pages + Cloudflare Workers) stack.
+            <br>
+            <br>
+            <u>Vercel / Now.sh / Zeit</u><br>
+            <a target=jdev_vercel href="https://vercel.com">Vercel</a> combines static hosting and serverless in one free service, I have used it in the past and really like it, you can also use one of the many templates given to you by default.
+        </p>
+
+        <br>
+        <div class="card bg-dark text-light" style="width: 10rem;">
+            <div class="card-body">
+                <h5 class="card-title">Written by</h5>
+                <hr>
+                <p class="card-text">JanCraft</p>
+            </div>
+        </div>
+    </article>
+    <br>
+    <br>
+    
+    <footer>
+      <div class="container">
+        &copy; Copyright - jDev 2021
+      </div>
+    </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
