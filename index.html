@@ -1,97 +1,264 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="author" content="JanCraft" />
-    <meta name="title" content="jDev" />
-    <meta name="description" content="Software development" />
+    <meta name="title" content="jDev ES" />
+    <meta name="description" content="Game & Software Developers" />
     <meta name="language" content="EN" />
 
-    <meta name="og:title" content="jDev" />
+    <meta name="og:title" content="jDev ES" />
     <meta name="og:type" content="website" />
     <meta name="og:url" content="https://jdev.com.es/" />
     <meta name="og:image" content="https://jdev.com.es/img/favicon.png" />
     <meta name="og:site_name" content="jDev" />
-    <meta name="og:description" content="Software development" />
+    <meta name="og:description" content="Game & Software Developers" />
+
+    <meta name="theme-color" content="#338">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
     <link rel="canonical" href="https://jdev.com.es/">
 
-    <title>jDev</title>
+    <title>jDev ES</title>
 </head>
-<body class="bg-dark">
-    <nav role="navigation" class="navbar navbar-expand-lg navbar-dark text-light bg-dark">
-        <div class="container-fluid">
-            <a href="/" class="navbar-brand">
-                <img src="img/favicon.png" alt="" width="30" height="30">
-                jDev
-            </a>
-            <div>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a target="jdev_github" href="https://github.com/JanCraft/" class="nav-link">
-                            <img src="img/GitHub-Mark-Light-64px.png" alt="" width="20" height="20">
-                            GitHub
-                        </a>
-                    </li>
-                </ul>
-            </div>
+<body>
+    <nav role="navigation">
+        <a href="/"><img src="img/favicon.png" alt="jDev" width="32" height="32"></a>
+        <h1>jDev ES</h1>
+
+        <a href="#team" class="link">Team</a>
+        <a href="#projects" class="link">Projects</a>
+        <a href="#games" class="link">Games</a>
+
+        <div class="float-right">
+            <a target="jdev-itch" href="https://jdev-es.itch.io/"><img src="img/itch_io.png" alt="itch.io page" width="24" height="24"></a>
+            <a target="jdev-github" href="https://github.com/JanCraft/"><img src="img/GitHub-Mark-Light-64px.png" alt="GitHub" width="24" height="24"></a>
         </div>
     </nav>
+    <br><br><br>
 
-    <main role="main" class="bg-darker">
-        <div class="container">
-    <div id="carouselMain" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="/wawary"><img src="img/wawary_banner.png" class="d-block w-100" alt="..."></a>
-            <div class="carousel-caption d-none d-md-block">
-                <h5>
-                    <a href="/wawary">wawary 2.0</a>
-                </h5>
+    <main role="main">
+        <section id="team">
+            <h2>Team</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>jancraft888</h3>
+                    <p>
+                        <img class="cut-circle" src="img/jancraft888.png" alt="jancraft888 profile" width="64" height="64"><br>
+                        <b>Main Developer & Founder</b>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>DarKITO</h3>
+                    <p>
+                        <img class="cut-circle" src="img/darkito.png" alt="DarKITO profile" width="64" height="64"><br>
+                        <b>Creative Director & Tester</b>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>ErikOtaku211</h3>
+                    <p>
+                        <img class="cut-circle" src="img/erikotaku211.png" alt="ErikOtaku211 profile" width="64" height="64"><br>
+                        <b>Developer & Tester</b>
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <a href="/jdev-gnet"><img src="img/gnet_banner.png" class="d-block w-100" alt="..."></a>
-            <div class="carousel-caption d-none d-md-block">
-                <h5>
-                    <a href="/jdev-gnet">jDev gNet</a>
-                </h5>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>briiokeed</h3>
+                    <p><b>Beta access</b></p>
+                </div>
+                <div class="card">
+                    <h3>enderblaze333</h3>
+                    <p><b>Beta access & Veteran</b></p>
+                </div>
+                <div class="card">
+                    <h3>franc0jon</h3>
+                    <p><b>Beta access</b></p>
+                </div>
+                <div class="card">
+                    <h3>papasazulitas</h3>
+                    <p><b>Beta access</b></p>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <a href="/full-body-aruco"><img src="img/full_body_aruco_banner.png" class="d-block w-100" alt="..."></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>
-                  <a href="/full-body-aruco">Full Body ArUco</a>
-              </h5>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>antonioxv</h3>
+                    <p><b>Veteran</b></p>
+                </div>
+                <div class="card">
+                    <h3>Noita18</h3>
+                    <p><b>Veteran</b></p>
+                </div>
+                <div class="card">
+                    <h3>threecomunity</h3>
+                    <p><b>Veteran</b></p>
+                </div>
+                <div class="card">
+                    <h3>Un Ruso Bebiendo Vodka</h3>
+                    <p><b>Veteran</b></p>
+                </div>
+            </div>  
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="cards">
+                <div class="card" id="project-fullbodyaruco">
+                    <h3>Full Body ArUco <span class="pill-red">Discontinued</span></h3>
+                    <p>
+                        SteamVR full body tracking using strapped ArUco markers.
+                    </p>
+                </div>
+                <div class="card" id="project-fullbodygyro">
+                    <h3>Full Body Gyro <span class="pill-red">Discontinued</span></h3>
+                    <p>
+                        SteamVR full body tracking using strapped gyroscopes.
+                    </p>
+                </div>
+                <div class="card" id="project-visiontrackvr">
+                    <h3>VisionTrackVR <span class="pill-yellow">Development</span></h3>
+                    <p>
+                        SteamVR full body tracking using MediaPipe.
+                    </p>
+                </div>
             </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-</div>
+            <div class="cards">
+                <div class="card" id="project-broadcastws">
+                    <h3>broadcast-ws <span class="pill-green">Finished</span></h3>
+                    <p>
+                        Public event-based broascasting server.
+                    </p>
+                </div>
+                <div class="card" id="project-jdevgnet">
+                    <h3>jDev gNET <span class="pill-green">Finished</span></h3>
+                    <p>
+                        Secure peer-to-peer-like server platform for videogames.
+                    </p>
+                </div>
+                <div class="card" id="project-teddorserver">
+                    <h3>Tedd'or Server <span class="pill-yellow">Development</span></h3>
+                    <p>
+                        Server for our game, <a href="#game-teddor" class="link2">Tedd'or</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card" id="project-jdevfuture">
+                    <h3>jDev Future <span class="pill-red">Obsolete</span></h3>
+                    <p>
+                        Old quantum superposition and computing engine for Python.
+                    </p>
+                </div>
+                <div class="card" id="project-datasciencesuite">
+                    <h3>Data Science Suite <span class="pill-green">Finished</span></h3>
+                    <p>
+                        Text learning & generation AI platform for Python.
+                    </p>
+                </div>
+                <div class="card" id="project-jdevquanta">
+                    <h3>jDev Quanta <span class="pill-yellow">Development</span></h3>
+                    <p>
+                        New quantum superposition and computing engine for Python. Supporting bigger superpositions.
+                    </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card" id="project-objg">
+                    <h3>objG <span class="pill-red">Obsolete</span></h3>
+                    <p>
+                        Begginner-friendly programming language based on Cell and built in Python.
+                    </p>
+                </div>
+                <div class="card" id="project-cellang">
+                    <h3>cellang <span class="pill-green">Finished</span></h3>
+                    <p>
+                        Improved version of <code>objG</code> built in JS and Deno.
+                    </p>
+                </div>
+                <div class="card" id="project-pjs">
+                    <h3>pjs <span class="pill-green">Finished</span></h3>
+                    <p>
+                        JavaScript framework for building React-like applications using vanilla JS.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="games">
+            <h2>Games</h2>
+            <div class="cards">
+                <div class="card" id="game-teddor">
+                    <h3>Tedd'or <span class="pill-yellow">Development</span></h3>
+                    <p>
+                        Open-world Adventure RPG game with Co-op and events.
+                    </p>
+                </div>
+                <div class="card" id="game-temorak">
+                    <h3>Temorak <span class="pill-yellow">Development</span></h3>
+                    <p>
+                        Open-world Sandbox with Online Multiplayer built on HTML5.
+                    </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card" id="game-sothmars">
+                    <h3>Sothmars <span class="pill-green">Beta</span></h3>
+                    <p>
+                        Simple prototyped First Person Shooter.
+                    </p>
+                </div>
+                <div class="card" id="game-flanker">
+                    <h3>Flanker <span class="pill-green">Finished</span></h3>
+                    <p>
+                        First Person Shooter like CS:GO.
+                    </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card" id="game-wawary">
+                    <h3>Wawary 2.0 <span class="pill-green">Finished</span></h3>
+                    <p>
+                        One-button innovative rythm game.
+                    </p>
+                </div>
+                <div class="card" id="game-usmbeats">
+                    <h3>usm beats <span class="pill-green">Finished</span></h3>
+                    <p>
+                        Innovative clicker rythm game.
+                    </p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card" id="game-pongxtra">
+                    <h3>Pong XTRA <span class="pill-green">Finished</span></h3>
+                    <p>
+                        Multiplayer pong game built on gNET.<br>
+                        <a target="jdev-pongxtra" href="https://jdev.com.es/pong-xtra/" class="link2">Play here</a>
+                    </p>
+                </div>
+                <div class="card" id="game-usmbeats">
+                    <h3>Vocsxela <span class="pill-red">Discontinued</span></h3>
+                    <p>
+                        Voxel-based MMO game.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <img src="img/favicon.png" alt="jDev" width="24" height="24">
+        Copyright &copy; 2021 JanCraft
+    </footer>
+
     <script src="js/controller.js" type="module"></script>
 </body>
 </html>
