@@ -19,6 +19,7 @@
 
     <meta name="theme-color" content="#338">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JanCraft/toolbox/dist/toolbox.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
@@ -26,18 +27,23 @@
 
     <title>jDev ES</title>
 </head>
-<body>
-    <nav role="navigation">
-        <a href="/"><img src="img/favicon.png" alt="jDev" width="32" height="32"></a>
-        <h1>jDev ES</h1>
+<body class="tbx-dark">
+    <nav role="navigation" class="tbx-nav">
+        <div class="tbx-nav-brand">
+            <a href="/"><img src="img/favicon.png" alt="jDev" width="32" height="32"></a>
+            <h1>jDev ES</h1>
+        </div>
 
-        <a href="#team" class="link">Team</a>
-        <a href="#projects" class="link">Projects</a>
-        <a href="#games" class="link">Games</a>
+        <div class="tbx-nav-links">
+            <a href="#team">Team</a>
+            <a href="#projects">Projects</a>
+            <a href="#games">Games</a>
+        </div>
 
-        <div class="float-right">
-            <a target="jdev-itch" href="https://jdev-es.itch.io/"><img src="img/itch_io.png" alt="itch.io page" width="24" height="24"></a>
-            <a target="jdev-github" href="https://github.com/JanCraft/"><img src="img/GitHub-Mark-Light-64px.png" alt="GitHub" width="24" height="24"></a>
+        <div class="tbx-nav-right">
+            <button class="tbx-btn" onclick="tbx('body').toggleClass('tbx-dark')">Dark/Light</button>
+            <a class="tbx-btn" target="jdev-itch" href="https://jdev-es.itch.io/"><img class="svg" src="img/itchio-logo.svg" alt="itch.io page" width="24" height="24"></a>
+            <a class="tbx-btn" target="jdev-github" href="https://github.com/JanCraft/"><img class="svg" src="img/GitHub-Mark.svg" alt="GitHub" width="24" height="24"></a>
         </div>
     </nav>
     <br><br><br>
@@ -47,21 +53,21 @@
             <h2>Team</h2>
 
             <div class="cards">
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>jancraft888</h3>
                     <p>
                         <img class="cut-circle" src="img/jancraft888.png" alt="jancraft888 profile" width="64" height="64"><br>
                         <b>Main Developer & Founder</b>
                     </p>
                 </div>
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>DarKITO</h3>
                     <p>
                         <img class="cut-circle" src="img/darkito.png" alt="DarKITO profile" width="64" height="64"><br>
                         <b>Creative Director & Tester</b>
                     </p>
                 </div>
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>ErikOtaku211</h3>
                     <p>
                         <img class="cut-circle" src="img/erikotaku211.png" alt="ErikOtaku211 profile" width="64" height="64"><br>
@@ -71,38 +77,38 @@
             </div>
 
             <div class="cards">
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>briiokeed</h3>
                     <p><b>Beta access</b></p>
                 </div>
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>enderblaze333</h3>
                     <p><b>Beta access & Veteran</b></p>
                 </div>
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>franc0jon</h3>
                     <p><b>Beta access</b></p>
                 </div>
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>papasazulitas</h3>
                     <p><b>Beta access</b></p>
                 </div>
             </div>
 
             <div class="cards">
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>antonioxv</h3>
                     <p><b>Veteran</b></p>
                 </div>
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>Noita18</h3>
                     <p><b>Veteran</b></p>
                 </div>
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>threecomunity</h3>
                     <p><b>Veteran</b></p>
                 </div>
-                <div class="card">
+                <div class="tbx-card tbx-card-w25">
                     <h3>Un Ruso Bebiendo Vodka</h3>
                     <p><b>Veteran</b></p>
                 </div>
@@ -112,19 +118,19 @@
             <h2>Projects</h2>
 
             <div class="cards">
-                <div class="card" id="project-fullbodyaruco">
+                <div class="tbx-card tbx-card-w25" id="project-fullbodyaruco">
                     <h3>Full Body ArUco <span class="pill-red">Discontinued</span></h3>
                     <p>
                         SteamVR full body tracking using strapped ArUco markers.
                     </p>
                 </div>
-                <div class="card" id="project-fullbodygyro">
+                <div class="tbx-card tbx-card-w25" id="project-fullbodygyro">
                     <h3>Full Body Gyro <span class="pill-red">Discontinued</span></h3>
                     <p>
                         SteamVR full body tracking using strapped gyroscopes.
                     </p>
                 </div>
-                <div class="card" id="project-visiontrackvr">
+                <div class="tbx-card tbx-card-w25" id="project-visiontrackvr">
                     <h3>VisionTrackVR <span class="pill-yellow">Development</span></h3>
                     <p>
                         SteamVR full body tracking using MediaPipe.
@@ -132,19 +138,19 @@
                 </div>
             </div>
             <div class="cards">
-                <div class="card" id="project-broadcastws">
+                <div class="tbx-card tbx-card-w25" id="project-broadcastws">
                     <h3>broadcast-ws <span class="pill-green">Finished</span></h3>
                     <p>
                         Public event-based broascasting server.
                     </p>
                 </div>
-                <div class="card" id="project-jdevgnet">
+                <div class="tbx-card tbx-card-w25" id="project-jdevgnet">
                     <h3>jDev gNET <span class="pill-green">Finished</span></h3>
                     <p>
                         Secure peer-to-peer-like server platform for videogames.
                     </p>
                 </div>
-                <div class="card" id="project-teddorserver">
+                <div class="tbx-card tbx-card-w25" id="project-teddorserver">
                     <h3>Tedd'or Server <span class="pill-yellow">Development</span></h3>
                     <p>
                         Server for our game, <a href="#game-teddor" class="link2">Tedd'or</a>.
@@ -152,19 +158,19 @@
                 </div>
             </div>
             <div class="cards">
-                <div class="card" id="project-jdevfuture">
+                <div class="tbx-card tbx-card-w25" id="project-jdevfuture">
                     <h3>jDev Future <span class="pill-red">Obsolete</span></h3>
                     <p>
                         Old quantum superposition and computing engine for Python.
                     </p>
                 </div>
-                <div class="card" id="project-datasciencesuite">
+                <div class="tbx-card tbx-card-w25" id="project-datasciencesuite">
                     <h3>Data Science Suite <span class="pill-green">Finished</span></h3>
                     <p>
                         Text learning & generation AI platform for Python.
                     </p>
                 </div>
-                <div class="card" id="project-jdevquanta">
+                <div class="tbx-card tbx-card-w25" id="project-jdevquanta">
                     <h3>jDev Quanta <span class="pill-yellow">Development</span></h3>
                     <p>
                         New quantum superposition and computing engine for Python. Supporting bigger superpositions.
@@ -172,19 +178,19 @@
                 </div>
             </div>
             <div class="cards">
-                <div class="card" id="project-objg">
+                <div class="tbx-card tbx-card-w25" id="project-objg">
                     <h3>objG <span class="pill-red">Obsolete</span></h3>
                     <p>
                         Begginner-friendly programming language based on Cell and built in Python.
                     </p>
                 </div>
-                <div class="card" id="project-cellang">
+                <div class="tbx-card tbx-card-w25" id="project-cellang">
                     <h3>cellang <span class="pill-green">Finished</span></h3>
                     <p>
                         Improved version of <code>objG</code> built in JS and Deno.
                     </p>
                 </div>
-                <div class="card" id="project-pjs">
+                <div class="tbx-card tbx-card-w25" id="project-pjs">
                     <h3>pjs <span class="pill-green">Finished</span></h3>
                     <p>
                         JavaScript framework for building React-like applications using vanilla JS.
@@ -195,13 +201,13 @@
         <section id="games">
             <h2>Games</h2>
             <div class="cards">
-                <div class="card" id="game-teddor">
+                <div class="tbx-card tbx-card-w25" id="game-teddor">
                     <h3>Tedd'or <span class="pill-yellow">Development</span></h3>
                     <p>
                         Open-world Adventure RPG game with Co-op and events.
                     </p>
                 </div>
-                <div class="card" id="game-temorak">
+                <div class="tbx-card tbx-card-w25" id="game-temorak">
                     <h3>Temorak <span class="pill-yellow">Development</span></h3>
                     <p>
                         Open-world Sandbox with Online Multiplayer built on HTML5.
@@ -209,13 +215,13 @@
                 </div>
             </div>
             <div class="cards">
-                <div class="card" id="game-sothmars">
+                <div class="tbx-card tbx-card-w25" id="game-sothmars">
                     <h3>Sothmars <span class="pill-green">Beta</span></h3>
                     <p>
                         Simple prototyped First Person Shooter.
                     </p>
                 </div>
-                <div class="card" id="game-flanker">
+                <div class="tbx-card tbx-card-w25" id="game-flanker">
                     <h3>Flanker <span class="pill-green">Finished</span></h3>
                     <p>
                         First Person Shooter like CS:GO.
@@ -223,13 +229,13 @@
                 </div>
             </div>
             <div class="cards">
-                <div class="card" id="game-wawary">
+                <div class="tbx-card tbx-card-w25" id="game-wawary">
                     <h3>Wawary 2.0 <span class="pill-green">Finished</span></h3>
                     <p>
                         One-button innovative rythm game.
                     </p>
                 </div>
-                <div class="card" id="game-usmbeats">
+                <div class="tbx-card tbx-card-w25" id="game-usmbeats">
                     <h3>usm beats <span class="pill-green">Finished</span></h3>
                     <p>
                         Innovative clicker rythm game.
@@ -237,14 +243,14 @@
                 </div>
             </div>
             <div class="cards">
-                <div class="card" id="game-pongxtra">
+                <div class="tbx-card tbx-card-w25" id="game-pongxtra">
                     <h3>Pong XTRA <span class="pill-green">Finished</span></h3>
                     <p>
                         Multiplayer pong game built on gNET.<br>
                         <a target="jdev-pongxtra" href="https://jdev.com.es/pong-xtra/" class="link2">Play here</a>
                     </p>
                 </div>
-                <div class="card" id="game-usmbeats">
+                <div class="tbx-card tbx-card-w25" id="game-usmbeats">
                     <h3>Vocsxela <span class="pill-red">Discontinued</span></h3>
                     <p>
                         Voxel-based MMO game.
@@ -254,11 +260,13 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="tbx-footer">
         <img src="img/favicon.png" alt="jDev" width="24" height="24">
+        &ThickSpace;
         Copyright &copy; 2021 JanCraft
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/gh/JanCraft/toolbox/dist/toolbox.min.js"></script>
     <script src="js/controller.js" type="module"></script>
 </body>
 </html>
