@@ -1,11 +1,29 @@
+main {
+    width: 100%;
+}
+
 .cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.tbx-card {
+    margin: .5rem;
+        
+    max-width: 25%;
+    width: 25%
 }
 
 h2 {
     text-align: center;
+}
+
+.svgp {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pill-red {
@@ -13,7 +31,7 @@ h2 {
     padding: .2rem;
     background: #811;
     border-radius: .25rem;
-    font-size: 1.25vw;
+    font-size: small;
     color: #fff;
 }
 
@@ -22,8 +40,8 @@ h2 {
     padding: .2rem;
     background: #b81;
     border-radius: .25rem;
+    font-size: small;
     color: #222;
-    font-size: 1.25vw;
 }
 
 .pill-green {
@@ -31,10 +49,20 @@ h2 {
     padding: .2rem;
     background: #181;
     border-radius: .25rem;
-    font-size: 1.25vw;
+    font-size: small;
     color: #fff;
 }
 
 .tbx-dark * .svg {
     filter: invert(1);
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+    }
+    .tbx-card {
+        max-width: calc(100% - 3rem);
+        width: calc(100% - 3rem);
+    }
 }
