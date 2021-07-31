@@ -37,10 +37,11 @@
             <a href="#team">Team</a>
             <a href="#projects">Projects</a>
             <a href="#games">Games</a>
+            <a href="#branding">Branding</a>
         </div>
 
         <div class="tbx-nav-right">
-            <button class="tbx-btn" onclick="tbx('body').toggleClass('tbx-dark')">Dark/Light</button>
+            <button class="tbx-btn" onclick="tbx('body').toggleClass('tbx-dark');savedark()">Dark/Light</button>
             <a class="tbx-btn svgp" target="jdev-itch" href="https://jdev-es.itch.io/"><img class="svg" src="img/itchio-logo.svg" alt="itch.io page" width="24" height="24"></a>
             <a class="tbx-btn svgp" target="jdev-github" href="https://github.com/JanCraft/"><img class="svg" src="img/GitHub-Mark.svg" alt="GitHub" width="24" height="24"></a>
         </div>
@@ -261,6 +262,21 @@
                 </div>
             </div>
         </section>
+        <section id="branding">
+            <h2>Branding</h2>
+
+            <div class="cards">
+                <ul>
+                    <li>Do not modify the logo in any way.</li>
+                    <li>Do not change the capitalization on the 'jDev' name.</li>
+                    <li>Do not distort the logo in any way.</li>
+                    <li>Do not use the logo as yours.</li>
+                    <li>Do not use the logo in any way it may be interpreted as a sponsorship or collaboration.</li>
+                    <li>Do not upscale the logo, only downscaling is allowed.</li>
+                </ul>
+                <a target="jdev-logo-300x300" href="img/jdevlogo-300x300.png"><img src="img/jdevlogo-300x300.png" width="128" height="128" alt="jDev Logo" style="margin: 1rem"></a>
+            </div>
+        </section>
     </main>
 
     <footer class="tbx-footer">
@@ -270,6 +286,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/gh/JanCraft/toolbox/dist/toolbox.min.js"></script>
-    <script src="js/controller.js" type="module"></script>
+    <script src="js/controller.js"></script>
 </body>
 </html>
