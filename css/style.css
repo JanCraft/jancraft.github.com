@@ -9,6 +9,10 @@ main {
     margin: .5rem;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .tbx-card {
     margin: .5rem;
         
